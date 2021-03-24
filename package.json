@@ -1,0 +1,22 @@
+{
+  "name": "den",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:run && npm run test:report",
+    "test:run": "cypress run",
+    "test:report": "npm run test:merge && npm run test:marge",
+    "test:merge": "mochawesome-merge > cypress/report/mochawesome.json",
+    "test:marge": "marge cypress/report/mochawesome.json -o cypress/report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^6.8.0",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-03-24T11:55:21.515Z",
+    "end": "2021-03-24T11:55:42.413Z",
+    "duration": 20898,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0df16ee2-793d-4a45-a455-0870ba843ae4",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.spec.js",
+      "file": "cypress\\integration\\login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "62c26e0e-ac0e-47b3-9a4e-d235ac64ece5",
+          "title": "Validate login page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Enter invalid data",
+              "fullTitle": "Validate login page Enter invalid data",
+              "timedOut": null,
+              "duration": 2512,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"../videos/examples/login.spec.js.mp4\"",
+              "code": "loginPage.login(configVariables.username, configVariables.password);\nloginPage.validateErrorMessage('The password you entered was not valid.');",
+              "err": {},
+              "uuid": "6e4c4d83-7ed2-4641-a011-05a943716859",
+              "parentUUID": "62c26e0e-ac0e-47b3-9a4e-d235ac64ece5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enter only username",
+              "fullTitle": "Validate login page Enter only username",
+              "timedOut": null,
+              "duration": 591,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"../videos/examples/login.spec.js.mp4\"",
+              "code": "loginPage.loginWithEmptyPassword(configVariables.username);\nloginPage.validateErrorMessage('Please enter your password.');",
+              "err": {},
+              "uuid": "3032ea97-a05e-4e87-bd87-482490370b82",
+              "parentUUID": "62c26e0e-ac0e-47b3-9a4e-d235ac64ece5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enter only password",
+              "fullTitle": "Validate login page Enter only password",
+              "timedOut": null,
+              "duration": 604,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"../videos/examples/login.spec.js.mp4\"",
+              "code": "loginPage.loginWithEmptyUsername(configVariables.password);\nloginPage.validateErrorMessage('Please enter username.');",
+              "err": {},
+              "uuid": "275637ae-3628-4d5e-acc5-c33eb2aae014",
+              "parentUUID": "62c26e0e-ac0e-47b3-9a4e-d235ac64ece5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enter valid data",
+              "fullTitle": "Validate login page Enter valid data",
+              "timedOut": null,
+              "duration": 17071,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"../screenshots/examples/login.spec.js/Validate login page -- Enter valid data (failed).png\",\n  \"../videos/examples/login.spec.js.mp4\"\n]",
+              "code": "loginPage.login(configVariables.username, configVariables.password);\nloginPage.validateErrorMessageNotDisplayed();",
+              "err": {
+                "message": "Error: EPERM: operation not permitted, open 'C:\\Users\\Aser\\Desktop\\Test\\den\\cypress\\screenshots\\login.spec.js\\Validate login page -- Enter valid data (failed).png'",
+                "estack": "Error: EPERM: operation not permitted, open 'C:\\Users\\Aser\\Desktop\\Test\\den\\cypress\\screenshots\\login.spec.js\\Validate login page -- Enter valid data (failed).png'\n\n",
+                "diff": null
+              },
+              "uuid": "ab068187-fd42-44e1-8fef-eaf165b6a6cd",
+              "parentUUID": "62c26e0e-ac0e-47b3-9a4e-d235ac64ece5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6e4c4d83-7ed2-4641-a011-05a943716859",
+            "3032ea97-a05e-4e87-bd87-482490370b82",
+            "275637ae-3628-4d5e-acc5-c33eb2aae014"
+          ],
+          "failures": [
+            "ab068187-fd42-44e1-8fef-eaf165b6a6cd"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20778,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

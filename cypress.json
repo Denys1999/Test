@@ -1,0 +1,13 @@
+{
+  "baseUrl": "https://www.pecodesoftware.com/qa-portal/registerlogin/registerlogin.php",
+  "env": {
+    "username": "test",
+    "password": "test"
+  },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
+}
